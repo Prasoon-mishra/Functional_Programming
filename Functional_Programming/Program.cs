@@ -8,6 +8,7 @@
             Console.WriteLine("Enter 1 for Fibonacci Series");
             Console.WriteLine("Enter 2 for Perfect Number");
             Console.WriteLine("Enter 3 for Prime Number");
+            Console.WriteLine("Enter 4 for Reverse Number");
             int Ans=Convert.ToInt32(Console.ReadLine());
             switch(Ans)
             {
@@ -19,6 +20,9 @@
                     break;
                 case 3: PrimeNumber PrimeObj= new PrimeNumber();
                     PrimeObj.Prime();
+                    break;
+                case 4: ReverseNumber ReverseObj= new ReverseNumber();  
+                    ReverseObj.Reverse();
                     break;
                 default: Console.WriteLine("Entered Value is Wrong");
                     break;
