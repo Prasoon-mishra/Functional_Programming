@@ -10,6 +10,7 @@
             Console.WriteLine("Enter 3 for Prime Number");
             Console.WriteLine("Enter 4 for Reverse Number");
             Console.WriteLine("Enter 5 for Coupon Number");
+            Console.WriteLine("Enter 6 for Stop Watch");
             int Ans=Convert.ToInt32(Console.ReadLine());
             switch(Ans)
             {
@@ -28,6 +29,10 @@
                 case 5:
                     Coupon couponObj = new Coupon();
                     couponObj.Coupon_Number();  
+                    break;
+                case 6:
+                    StpWatch StopObj = new StpWatch();
+                    StopObj.Stop_Watch();
                     break;
                 default: Console.WriteLine("Entered Value is Wrong");
                     break;
